@@ -1,5 +1,5 @@
-# This script is hosted on https://get.activated.win for https://massgrave.dev
-
+<!-- saved from url=(0026)https://get.activated.win/ -->
+<html><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js" id="eppiocemhmnlbhjplcgkofciiegomcon"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body __processed_88b4a51c-defc-4c5d-90ab-e3b0f5af16ad__="true" cz-shortcut-listen="true" data-new-gr-c-s-check-loaded="14.1229.0" data-gr-ext-installed=""># This script is hosted on <b>https://get.activated.win</b> for <b>https://massgrave.dev</b><hr><pre>
 $troubleshoot = 'https://massgrave.dev/troubleshoot'
 if ($ExecutionContext.SessionState.LanguageMode.value__ -ne 0) {
     $ExecutionContext.SessionState.LanguageMode
@@ -29,7 +29,7 @@ function CheckFile {
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $URLs = @(
     'https://raw.githubusercontent.com/massgravel/Microsoft-Activation-Scripts/313f240448953cd5fe3c5631f4e4de502f23fc9a/MAS/All-In-One-Version-KL/MAS_AIO.cmd',
-    'https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&versionType=Commit&version=313f240448953cd5fe3c5631f4e4de502f23fc9a',
+    'https://dev.azure.com/massgrave/Microsoft-Activation-Scripts/_apis/git/repositories/Microsoft-Activation-Scripts/items?path=/MAS/All-In-One-Version-KL/MAS_AIO.cmd&amp;versionType=Commit&amp;version=313f240448953cd5fe3c5631f4e4de502f23fc9a',
     'https://git.activated.win/massgrave/Microsoft-Activation-Scripts/raw/commit/313f240448953cd5fe3c5631f4e4de502f23fc9a/MAS/All-In-One-Version-KL/MAS_AIO.cmd'
 )
 
@@ -73,7 +73,7 @@ Set-Content -Path $FilePath -Value "@::: $rand `r`n$response"
 CheckFile $FilePath
 
 $env:ComSpec = "$env:SystemRoot\system32\cmd.exe"
-$chkcmd = & $env:ComSpec /c "echo CMD is working"
+$chkcmd = &amp; $env:ComSpec /c "echo CMD is working"
 if ($chkcmd -notcontains "CMD is working") {
     Write-Warning "cmd.exe is not working.`nReport this issue at $troubleshoot"
 }
@@ -82,3 +82,24 @@ CheckFile $FilePath
 
 $FilePaths = @("$env:SystemRoot\Temp\MAS*.cmd", "$env:USERPROFILE\AppData\Local\Temp\MAS*.cmd")
 foreach ($FilePath in $FilePaths) { Get-Item $FilePath | Remove-Item }
+</pre></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
